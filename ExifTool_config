@@ -1,0 +1,21 @@
+%Image::ExifTool::UserDefined = (
+    'Image::ExifTool::XMP::pdfx' => {
+        Books => { },
+        Key => { },
+        Album => { },
+        Signature => { },
+        sourceType => { Description => sourceType },
+        Duration => { },
+        Year => { },
+    },
+    'Image::ExifTool::PDF::Info' => {
+        Books => { List => 'string' },
+        Key => { List => 'string' },
+        Album => { List => 'string' },
+        Signature => { List => 'string' },
+        sourceType => { Description => sourceType },
+        Duration => { },
+        Year => { },
+    },
+);
+1;  #end
