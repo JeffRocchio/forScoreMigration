@@ -1,0 +1,37 @@
+Instead of using Excel/Libreoffice Calc Regex could be used to transform the forScore setlist export files into MobileSheets .mss XML import files.
+
+I didn't go this way because I can't control either what editors folks will have available or their skill set in using them. So to use regex for a wide audience I'd have to do so in some sort of scripting engine. But which one that is guaranteed to be available cross platform? Beats me.
+
+But if you want to use a text editor and Regex; or a bash script, below is the regex code and recommended replacement sequence:
+
+The below sequence assumes that all the forScore exported .4ss files have been concatenated into a single file.
+
+1: Find/Replace the Setlist opening tags ---
+	Regex to find Setlist opening tag in .4ss files:
+	<forScore kind=".+\stitle="(.+?)">
+
+	Replacement string to put it into ,mss XML form:
+	<Setlist><Name>\1</Name>
+
+2: Find/Replace the Setlist closing tags ---
+	Regex to find Setlist closing tag in .4ss files:
+	</forScore>.*
+
+	Replacement string to put it into ,mss XML form:
+	</Setlist>
+
+3: Find/Replace the Song lines ---
+	Regex to find score lines in .4ss files:
+	<score title="(.+?)"\spath="(.+?)"\s*?/>
+
+	Replacement string to put them into .mss XML form:
+	<Song><Title>\1</Title><FileName>\2</FileName><FileType>1</FileType>
+
+4: Finally, once all the replacements above have been completed, insert the opening and closing setlists tags:
+	Insert a new line right below the <?xml version="1.0" encoding="UTF-8" ?> line.
+	On this new line Type: <Setlists>
+	Insert a new last line and on it type: </Setlists>
+
+5: Save the file as 0510_Setlist-Import.mss.
+
+--DONE--
