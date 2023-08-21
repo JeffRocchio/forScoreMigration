@@ -1,9 +1,8 @@
 # forScore to MobileSheets Migration
-## Step-by-Step Instructions
 
-This document contains the sequence of actions I took to migration from forScore to MobileSheets. If you are making the switch perhaps my experience can help you make the transition relatively smoothly.
+This repository contains some tools, and instructions, for migrating from the forScore sheet music reader app over to MobileSheets.
 
-What I did was document how I did it. I have not performed extensive testing on this process, so there may be errors. **Be sure to make backups!**
+I ended up creating two alternative sets of tools to do this. What is described below is my first take - using two Spreadsheets to perform the forScore to MobileSheets data translation. Those Spreadsheets do work. I then decided to create two Python scripts as an alternative to the Spreadsheets. I do feel that the Python scripts are easier to use, and are likely more reliable. If you elect to use the Python scripts you should still read *Section 3* of [0010_Step-by-Step-Instructions.pdf](https://github.com/JeffRocchio/forScoreMigration/blob/main/0010_Step-by-Step-Instructions.pdf) on how to do the exports from forScore. But then refer to the instructions @ [python readme](https://github.com/JeffRocchio/forScoreMigration/tree/main/python#readme)
 
 Also, I am a Linux guy with no access to a Windows or Mac PC. I believe that everything I've done will work on either Windows or a Mac. If someone tries it it would be good to advise any issues.
 
@@ -40,4 +39,4 @@ Also, I am a Linux guy with no access to a Windows or Mac PC. I believe that eve
    3. *Import Setlists into MobileSheets*. Import .mss file into MobileSheets.
 
 ### Step-by-Step Guide
-For a detailed description of the steps I took to make the migration, see the document *[0010_Step-by-Step-Instructions.pdf](0010_Step-by-Step-Instructions.pdf)*.
+For a detailed description of the steps I took to make the migration, see the document [0010_Step-by-Step-Instructions.pdf](0010_Step-by-Step-Instructions.pdf).
