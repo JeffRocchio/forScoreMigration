@@ -51,7 +51,7 @@ The *setlists.py* script will generate the *0510_Setlist-Import.mss* file using 
     1. CD (change directory) into the *forScoreMigration/scores* directory.
     1. In the terminal window run the following:
 
-                python3.11 fsCSVtransform
+                python3.11 fsCSVtransform.py
 
         This will run and "translate" the forScore exported metadata for each score into a form that MobileSheets can use. The result is a new file in your *forScoreMigration/scores* directory named *0500_ExifTool-Input.csv*.
 
@@ -62,12 +62,12 @@ The *setlists.py* script will generate the *0510_Setlist-Import.mss* file using 
         This will populate all your exported score documents with the transformed metadata to make them ready for import into forScore.
 
     1. To bring your forScore setlists into MobileSheets do the following:
-        1. CD into forScoreMigration/setlists.
+        1. CD into *forScoreMigration/setlists* directory.
         1. In the terminal window run the following:
 
                 python3.11 setlists.py
 
-            This will read in all the forScore exported setlist files (those have the file extension .4ss) and produce an output file that MobileSheets can import to create the setlists and assign the scores to them.
+            This will read in all the forScore exported setlist files (those have the file extension .4ss) and produce an output file that MobileSheets can import to create the setlists and assign the scores to them. The created output file for MobileSheets will be named *0510_Setlist-Import.mss*.
 
 6. Make sure you have a clean MobileSheets on your device. If necessary perform a full backup, then a full delete of your library.
 
