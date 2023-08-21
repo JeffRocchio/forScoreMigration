@@ -27,13 +27,14 @@ The *setlists.py* script will generate the *0510_Setlist-Import.mss* file using 
 **NOTE**: As of 8/21/2023 I have not yet run a full-scale test of these instructions. I have tested each piece individually on a sample set, but yet done and end-to-end test run. Hopefully that will happen in the next day or so. If not, I'll be away for about a week, so it won't be until August-30 or so if I don't get it done in the next 1-2 days. I'd be happy if someone did try it - but make backups before you do!
 
 1. Using your desktop PC (or laptop) go to your app store (e.g., 'Microsoft Store,' or Apple App Store) and install two applications:
-    1. Python 3.11
-    2. ExifTool
+    1. Python 3.11. Get this from your app store (e.g., 'Microsoft Store,' or Apple App Store).
+    2. ExifTool 12.65. Goto [https://exiftool.org/](https://exiftool.org/) and obtain version for your system.
 
 2. Somewhere in your home directory create the following subdirectory structure:
-    1.  forScoreMigration
-            | score
-            | setlists
+
+            forScoreMigration
+                | scores
+                | setlists
 
 3. Export from forScore:
     > Refer to Section 3 in [0010_Step-by-Step-Instructions.pdf](https://github.com/JeffRocchio/forScoreMigration/blob/main/0010_Step-by-Step-Instructions.pdf).
