@@ -40,7 +40,7 @@ The *setlists.py* script will generate the *0510_Setlist-Import.mss* file using 
 3. Export from forScore:
     > Refer to Section 3 in [0010_Step-by-Step-Instructions.pdf](https://github.com/JeffRocchio/forScoreMigration/blob/main/0010_Step-by-Step-Instructions.pdf).
 
-    1. Copy all your scores off you iPad, from the forScore directory in the iPad's File Manager. Got those into the forScoreMigration/scores directory on your PC. The easiest way to do this is by using a cloud service. In my case, for example, I use Dropbox.
+    1. Copy all your scores off you iPad, from the forScore directory in the iPad's File Manager. Get those into the *forScoreMigration/scores* directory on your PC. The easiest way to do this is by using a cloud service. In my case, for example, I use Dropbox.
     2. Export your metadata out of forScore into the forScoreMigration/scores directory as filename Export.csv.
     3. Export your setlists, as "editable," out of forScore into the forScoreMigration/setlists directory.
 
